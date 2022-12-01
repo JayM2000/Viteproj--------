@@ -1,0 +1,107 @@
+/* left part */
+.edu__item {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.picleft {
+    width: 50%;
+    margin-right: 2rem;
+
+    box-shadow: 0 0 2rem 0.32rem var(--color-primary);
+}
+
+
+.picleft > img {
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+
+
+/* right part */
+.picright {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.picright > .madewith {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 1.2rem;
+}
+
+.picright > h5 {
+    font-size: 28px;
+
+    text-decoration: underline;
+    text-decoration-style: double;  
+}
+
+
+.madewith > h5 {
+    font-size: 22px;
+    margin-top: 0.5rem;
+}
+
+.svgs {
+    font-size: 3.2rem;
+}
+
+.svglast > svg {
+    background: rgb(206, 184, 184);
+}
+
+.explained {
+    margin-top: 0.8rem;
+}
+
+/* button live code part */
+.buttons {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.btns {
+    border: 2px solid var(--color-dark);
+    padding: 0.6rem;
+}
+
+.btns > i {
+    margin-right: 0.3rem;
+}
+
+
+
+
+/* ********************** Small Device ************************** */
+@media screen and (max-width: 699px) {
+
+.edu__item {
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+
+.picleft {
+    width: 100%;
+    margin-right: 2rem;
+
+    box-shadow: 0 0 2rem 0.32rem var(--color-primary);
+}
+
+.picright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+}

@@ -1,0 +1,93 @@
+.expf {
+    max-width: 1200px;
+    padding: 1.5rem 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.ulists {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+li {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.ulists li:hover {
+    transform: scale(1.3);
+}
+
+.exps {
+    transition-duration: .5s;
+    margin-top: 16.5rem;
+}
+
+section>h5 {
+    font-size: 3rem;
+}
+
+.textall {
+    font-size: 18px;
+    font-weight: bold;
+    filter: brightness(1);
+
+    /* text-shadow: 0 0 2px #9c27b0, 0 0 55px #9c27b0, 0 0 40px #9c27b0, 0 0 20px #9c27b0; */
+    /* text-align: center; */
+}
+
+.textal {
+    font-size: 15px;
+    color:var(--color-primary);
+    text-shadow: 0 0 2px var(--card-color), 0 0 25px var(--card-color), 0 0 11px var(--card-color), 0 0 1px var(--card-color);
+}
+
+
+
+
+/* ********************** ipad medium  Device ************************** */
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+    .card {
+        box-shadow: 0rem 0.15rem 1.6rem 1rem var(--card-color);
+        border-radius: 33px;
+        margin: 0 70px 0 70px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+    }
+}
+
+/* ********************** Laptop desktop greater Device ************************** */
+@media screen and (min-width: 1500px) {
+    .card {
+        box-shadow: 0rem 0.15rem 1.6rem 1rem var(--card-color);
+        border-radius: 33px;
+        margin: 0 230px 0 230px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+    }
+}
+
+
+/* ********************** Small Device ************************** */
+@media screen and (max-width: 699px) {
+    .card {
+        box-shadow: 0rem 0.15rem 1.6rem 1rem var(--card-color);
+        border-radius: 33px;
+        margin: 0 25px 0 25px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+    }
+}

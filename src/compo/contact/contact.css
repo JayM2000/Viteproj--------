@@ -1,0 +1,155 @@
+.container.contact__container {
+    width: 50%;
+    display: flex;
+    gap: 12%;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact__option {
+    background: rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(15px); */
+    border: 10x solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transitions);
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-backg);
+    cursor: default;
+    box-shadow: 0 0 5rem 0.2rem var(--color-primary);
+}
+
+.iconstag {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.iconstag>.iconss {
+    font-size: 22px
+}
+
+.lastpart {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.lastpart a {
+    border: 1px solid var(--card-color);
+    border-radius: 1rem;
+    text-shadow: 0 0 2px var(--card-color), 0 0 25px var(--card-color), 0 0 11px var(--card-color), 0 0 1px var(--card-color);
+}
+
+.lastpart a:hover {
+    color: var(--card-color);
+    border-left: 3rem solid;
+}
+
+/* form  */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+input,
+textarea {
+    background: transparent;
+    background-color: var(--color-backg);
+    width: 130%;
+    border-radius: 0.4rem;
+    border: 3px solid var(--color-primary);
+    resize: none;
+}
+
+form > .inp {
+    padding: 0.5rem;
+}
+
+/* button in form section */
+form>.btn-primary {
+    font-size: 20px;
+    background: var(--color-primary);
+    color: var(--color-backg);
+}
+
+
+/* ********************** ipad medium  Device ************************** */
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+    .container.contact__container {
+        width: var(--container-width-md);
+        display: flex;
+        justify-content: center;
+        gap: 2.8rem;
+    }
+
+    .contact__options {
+        gap: 1rem;
+    }
+
+    /* form */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    
+    input,
+    textarea {
+        background: transparent;
+        background-color: var(--color-backg);
+        width: 100%;
+        border-radius: 0.4rem;
+        border: 3px solid var(--color-primary);
+        resize: none;
+    }
+}
+
+
+/* ********************** Small Device ************************** */
+@media screen and (max-width: 699px) {
+    .container.contact__container {
+        width: var(--container-width-sm);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.8rem;
+    }
+
+    .contact__options {
+        gap: 1rem;
+    }
+
+    /* form */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    
+    input,
+    textarea {
+        background: transparent;
+        background-color: var(--color-backg);
+        width: 100%;
+        border-radius: 0.4rem;
+        border: 3px solid var(--color-primary);
+        resize: none;
+    }
+    
+}

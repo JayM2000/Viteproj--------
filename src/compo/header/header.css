@@ -1,0 +1,138 @@
+header {
+  /* height: 100vh; */
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.header__socials {
+  /* border: 2px yellowgreen solid; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  /* border: 2px green solid; */
+  margin: 2.5rem 0rem 10px 0rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+
+/* photo sizing css */
+.me {
+  /* border: 5px rgb(223, 42, 72) solid; */
+  background: linear-gradient(var(--color-me-photo), transparent);
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 1rem 1rem;
+  overflow: hidden;
+  padding: 0.5rem 0.5rem 1rem 1rem;
+  margin-left: 20px;
+}
+
+/* photo css end */
+
+.scroll_down {
+  display: flex;
+  justify-content: center;
+}
+
+/* button header part  */
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  /* color: var(--color-hovers); */
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  /* border: 1px solid var(--color-for-mode); */
+  transition: var(--transitions);
+}
+
+.btn:hover {
+    background: var(--color-backg);
+    color: var(--color-primary);
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem var(--color-primary);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-backg);
+}
+/* button header end */
+
+
+/* ********************** Tab Device  >700 ***************************/
+@media screen and (min-width:700px) {
+  header {
+    height: 100vh;
+  }
+
+  /* new toggle */
+  .maindiv {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: flex;
+    padding: 0.8rem 1rem 0rem 1rem;
+    z-index: 2;
+    position: fixed;
+    left: 94%;
+    transform: translateX(-50%);
+    top: 1rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+  /* new toggle ends here */
+
+}
+
+
+/* ********************** Mobile Small Device  ************************** */
+@media screen and (min-width:390px) and (max-width: 699px){
+  header {
+    height: 90vh;
+  }
+
+
+  /* new toggle */
+  .maindiv {
+    padding-right: 30px;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+  }
+  /* new toggle ends here */
+
+}
+
+
+/* ********************** Extreme Mobile Small Device <380 ************************** */
+@media screen and (max-width:380px) {
+  header {
+    height: 110vh;
+  }
+
+
+  .maindiv {
+    padding-right: 30px;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+  }
+
+}

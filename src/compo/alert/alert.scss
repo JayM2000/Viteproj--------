@@ -1,0 +1,46 @@
+/* alert message */
+.mess {
+    position: fixed;
+    z-index: 2;
+    border: 1px solid green;
+    background-color: lightgreen;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 22px 3px lightgreen;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+
+    backdrop-filter: blur(15px);
+
+    top: 6rem;
+    left: 50%;
+    color: black;
+
+    font-size: 26px;
+}
+
+.mess > svg {
+    display:inline-block;
+}
+
+
+/* ********************** Small Device ************************** */
+@media screen and (max-width: 699px) {
+    /* alert message */
+    .mess {
+        border: 1px solid green;
+        background-color: lightgreen;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 22px 3px lightgreen;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        position: fixed;
+        top: 5rem;
+        left: 10%;
+        color: black;
+
+        font-size: 24px;
+    }
+
+    .mess>svg {
+        display: inline-block;
+    }
+}

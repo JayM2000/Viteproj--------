@@ -1,0 +1,120 @@
+
+.education {
+    transition-duration: .5s;
+    margin-top: 16.5rem;
+}
+
+.h5comp {
+    margin-bottom: 3rem;
+}
+
+.flexboxs {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* imginfo */
+.imginfo {
+    flex: 0 0 20%;
+    margin: 3rem 3rem 3rem 3rem;
+
+}
+
+/* eduinfo */
+.eduinfo {
+    flex: 0 0 70%;
+    margin-top: 3rem;
+
+}
+
+.year {
+    padding-left: 29.5rem;
+}
+
+.stream {
+    padding-top: 0.8rem;
+}
+
+.spns {
+    margin-left: 1rem;
+}
+
+.utags {
+    margin-top: 1.2rem;
+}
+
+.ultag > li {
+    color: var(--color-dark);
+    display: block;
+    font-size: 21px;
+    margin: 0;
+}
+
+/* ********************** ipad medium  Device ************************** */
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+    .cardport {
+        box-shadow: 0rem 0.15rem 1.6rem 1rem var(--card-color);
+        border-radius: 33px;
+        margin: 0 10px 0 10px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+    }
+}
+
+/* ********************** Laptop desktop greater Device ************************** */
+@media screen and (min-width: 1500px) {
+    .cardport {
+        box-shadow: 0rem 0.15rem 1.6rem 1rem var(--card-color);
+        border-radius: 33px;
+        margin: 0 150px 0 150px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+    }
+}
+
+
+/* ********************** Small Device ************************** */
+@media screen and (max-width: 699px) {
+    .cardport {
+        box-shadow: 0rem 0.15rem 1.6rem 1rem var(--card-color);
+        border-radius: 33px;
+        margin: 0 15px 0 15px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+    }
+
+    .flexboxs {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* imginfo */
+    .imginfo {
+        flex: none;
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    .eduinfo {
+        flex: none;
+        margin: 0;
+    }
+
+    .year {
+        padding-left: 110px;
+    }
+
+    .cgpa {
+        font-size: 15px;
+    }
+
+    .spns {
+        margin-left: 0.5rem;
+        font-size: 20px;
+    }
+
+
+}
